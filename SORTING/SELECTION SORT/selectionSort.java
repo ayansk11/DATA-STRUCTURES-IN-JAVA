@@ -21,7 +21,7 @@ public class selectionSort {
         }
         System.out.println("\n");
         
-        System.out.println("PERFORMING INSERTION SORT ON THE ARRAY........");
+        System.out.println("PERFORMING SELECTION SORT ON THE ARRAY........");
         sort(arr);
         
         System.out.println("PRINTING THE SORTED ARRAY..........");
