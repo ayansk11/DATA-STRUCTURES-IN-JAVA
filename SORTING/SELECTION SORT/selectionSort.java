@@ -19,9 +19,7 @@ public class selectionSort {
 
             System.out.print(arr[i] + "\t");
         }
-        
-        System.out.println("PERFORMING SELECTION SORT ON THE ARRAY........");
-        sort(arr);
+       
         
         System.out.println("THE ELEMENTS IN THE ARRAY ARE: ");
         for (int i = 0; i <= arr.length - 1; i++) {
@@ -30,26 +28,7 @@ public class selectionSort {
         }
     }
 
-    void sort(int[] arr) {
-
-        int min;
-
-        for (int i = 0; i < arr.length - 1; i++) {
-
-            min = i;
-
-            for (int j = i + 1; j < arr.length; j++) {
-
-                if (arr[j] < arr[min]) {
-
-                    min = j;
-                }
-            }
-        
-            int temp = arr[min];
-            arr[min] = arr[i];
-            arr[i] = temp;
-    }
+   
 }
 
     
