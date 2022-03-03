@@ -21,7 +21,8 @@ public class insertionSort {
         }
         System.out.println("\n");
 
-
+        System.out.println("PERFORMING INSERTION SORT ON THE ARRAY........");
+        sort(arr);
 
         System.out.println("PRINTING THE SORTED ARRAY: ");
         for (int i = 0; i <= arr.length - 1; i++) {
@@ -29,6 +30,24 @@ public class insertionSort {
             System.out.print(arr[i] + "\t");
         }
     }
+    
+    void sort(int[] arr) {
+        
+        for (int i = 1; i < arr.length; i++)
+        {
+            int currindex = i;
+
+            while (currindex > 0 && arr[currindex] < arr[currindex - 1])
+            {
+                int temp = arr[currindex];
+                arr[currindex] = arr[currindex - 1];
+                arr[currindex - 1] = temp;
+
+                currindex = currindex - 1;
+            }
+        }
+    }
+}
 
 
     public static void main(String[] args) {
