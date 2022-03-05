@@ -31,6 +31,22 @@ public class insertionSort {
         }
     }
     
+    void sort(int[] arr) {
+        
+    for (int i = 1; i < arr.length; i++)
+    {
+        int currindex = i;
+
+        while (currindex > 0 && arr[currindex] < arr[currindex - 1])
+        {
+            int temp = arr[currindex];
+            arr[currindex] = arr[currindex - 1];
+            arr[currindex - 1] = temp;
+
+            currindex = currindex - 1;
+        }
+    }
+}
 
 }
 
